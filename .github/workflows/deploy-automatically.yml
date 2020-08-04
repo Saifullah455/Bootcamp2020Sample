@@ -28,7 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Install Surge
-      run: npm install --global surge
+      run: npm install -g surge
       
     - name: Deploy on Surge
       run: surge ./ first-surge-bootcamp-deploymnet.surge.sh --token {{ secrets.SURGE_TOKEN }}
